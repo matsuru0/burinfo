@@ -1,0 +1,200 @@
+
+
+
+
+body{
+	background-color: #b8bab9;
+	margin:0;
+	padding: 0;
+}
+/* ###import### */
+
+/* end */
+#container{
+	width: 100%;
+	grid-template-columns: 70% 30%;
+	justify-content: center;
+}
+/* -------------------------------- ###Header Bar ### --------------------------------*/
+#header{
+	
+	font-family: 'Thabit', serif;
+	background-image: url("spidbanner.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	/*background-color: #e5e5e5;*/
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	color:white;
+	flex-direction: row ;
+	width: 100%;
+}
+#header img{
+	border:4px #00ccff groove;
+	background-color: yellowgreen;
+	
+	 
+}
+#header img:hover{
+	background-color:red;
+}
+/*---------------------- ##Navigation Bar###----------------*/
+#nav{
+	
+	display: flex;
+	justify-content: center;
+	float:left;
+	width: 100%;
+}
+#nav a{
+	
+	
+	background-color: #00ccff;
+	padding: 12px 14px 12px 14px;
+	border:1px white solid;
+	border-radius: 20px;
+	font-size:20px;
+	text-decoration: none;
+	color:white;
+}
+#nav ul{
+	list-style-type: none;
+	float:left;	
+}
+#nav li{
+	float:left;
+}
+/* ###dynamic###*/
+#nav a:hover{
+	color:red;
+	background:#e5e5e5;
+}
+#nav a:active{
+	color:green;
+}
+
+/* -------------------------------###end ### -------------------------------*/
+/* ------------------------------###content###--------------------------*/
+#content{
+	margin-top: 120px;
+	width: 100%;
+	display: flex;
+}
+/* --###left###-*/
+#left{
+	background-image: url("hacker.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	float:left;
+	width: 20%;
+	border:1px white solid;
+	border-radius: 20px;
+}
+#left2{
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+	background-image: url("hacker.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	float:left;
+	width: 0%;
+	border:1px white solid;
+	border-radius: 20px;
+}
+/* ---#main#--*/
+#main{
+	background-image: url("hacker.jpg");
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	float:right;
+	width: 80%;
+	background-color: grey;
+	border:1px white solid;
+	border-radius: 20px;
+}
+#main > div{
+	align-items: center;
+	width: 90%;
+	border:1px red solid;
+	border-radius: 20px;
+	background-color: #e5e5e5;
+}
+.box{
+	align-items: center;
+	margin:50px;
+	display: flex;
+	color:black;
+}
+.box p{
+	font-family: 'Droid Arabic Kufi';
+	text-align: right;
+	float:right;
+	padding: 20px;
+}
+.box img{
+	align-self: center;
+}
+.title{
+	font-family: 'Droid Arabic Kufi';
+	
+}
+/* ##dynamic###*/
+.title a:hover{
+	color:red;
+}
+.title a:active{
+	color:green;
+}
+/* ---------------------end-------------------------*/
+
+/* -----------#footer#--------------------------*/
+#footer{
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	font-size: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	color:white;
+}
+/*---------------------#end#----------------------*/
+
+/* -----------------##responsive###---------------*/
+@media screen and (max-width: 800px) {
+	#container{
+		
+	}
+	#left{
+		 
+		
+		width: 0%;
+	}
+	#left2{
+		width: 100%;
+	}
+	#content{
+		
+		justify-content: center;
+		width:100%;
+	}
+	#main{
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.box{
+		
+		
+		justify-content: center;
+		width: 500px;
+		flex-direction:column;
+	}
+}
